@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
-import logo from "../../assets/logo.png";
 import { login, signup } from "../../firebase";
-import { Await } from "react-router-dom";
 import spinner from "../../assets/spinner.gif";
+import { logo } from "../../assets/logo.png";
 
 const Login = () => {
   const [signState, setSignState] = useState("Sign In");
