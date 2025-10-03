@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Login.css";
+import "./login.css";
 import { login, signup } from "../../firebase";
 import spinner from "../../assets/spinner.gif";
 import { logo } from "../../assets/logo.png";
