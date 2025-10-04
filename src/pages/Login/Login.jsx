@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./login.css";
 import { login, signup } from "../../firebase";
-import { spinner } from "../../assets/spinner.gif";
-import { logo } from "../../assets/logo.png";
+import spinner from "../../assets/spinner.gif";
+import logo from "../../assets/logo.png";
 
 const Login = () => {
   const [signState, setSignState] = useState("Sign In");
@@ -23,11 +23,11 @@ const Login = () => {
 
   return loading ? (
     <div className="login-spinner">
-      <img src={spinner} alt="" />
+      <img src={spinner} alt="loading" />
     </div>
   ) : (
     <div className="login">
-      <img src={logo} className="login-logo" alt="" />
+      <img src={logo} className="login-logo" alt="Netflix logo" />
       <div className="login-form">
         <h1>{signState}</h1>
         <form>
